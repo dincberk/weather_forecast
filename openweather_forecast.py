@@ -22,5 +22,7 @@ for x in cities:
     df=df.rename(columns={'city_temp':city})
     df=df.set_index('dt_txt')
     appended_data.append(df)
-appended_data = pd.concat(appended_data,axis=1,sort=False)    
-display(appended_data)
+appended_data = pd.concat(appended_data,axis=1,sort=False) 
+print(appended_data)
+#OR
+#display(appended_data)
